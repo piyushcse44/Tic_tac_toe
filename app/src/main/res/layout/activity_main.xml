@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Tic Toc Toe"
+        android:textColor="@color/main_title"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_oneplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="#FF0000"
+        android:text="One Player"
+        android:backgroundTint="@color/main_title"
+        android:paddingLeft="40dp"
+       android:paddingRight="40dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_main_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_twoplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="#FF0000"
+        android:text="Two Player"
+        android:backgroundTint="@color/main_title"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_oneplayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="#FF0000"
+        android:text="Online"
+        android:backgroundTint="@color/main_title"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_twoplayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
